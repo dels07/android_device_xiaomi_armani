@@ -1,0 +1,38 @@
+[
+  {
+    "remote":       "github",
+    "repository":   "AOSPA-legacy/android_device_qcom_common",
+    "target_path":  "device/qcom/common",
+    "revision":     "kitkat"
+  },
+  {
+    "remote":       "github",
+    "repository":   "armani-dev/android_kernel_xiaomi_armani",
+    "target_path":  "kernel/xiaomi/armani",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "armani-dev/proprietary_vendor_xiaomi",
+    "target_path":  "vendor/xiaomi",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "armani-dev/android_hardware_qcom_display-caf-legacy",
+    "target_path":  "hardware/qcom/display-caf-legacy",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "armani-dev/android_hardware_qcom_media-caf-legacy",
+    "target_path":  "hardware/qcom/media-caf-legacy",
+    "revision":     "cm-11.0"
+  },
+  {
+    "remote":       "github",
+    "repository":   "armani-dev/android_hardware_libhardware_legacy",
+    "target_path":  "hardware/libhardware_legacy",
+    "revision":     "cm-11.0"
+  }
+]

@@ -152,11 +152,23 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
+	<!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
+	<bool name="config_multiColorNotificationLed">false</bool>
+
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
-    <bool name="config_multiColorBatteryLed">true</bool>
+    <bool name="config_multiColorBatteryLed">true</bool> 
+
+	<!-- Default color for notification LED is white. -->
+	<color name="config_defaultNotificationColor">#ffffffff</color>
+
+	<!-- Default LED on time for notification LED in milliseconds. -->
+	<integer name="config_defaultNotificationLedOn">1000</integer>
+
+	<!-- Default LED off time for notification LED in milliseconds. -->
+	<integer name="config_defaultNotificationLedOff">9000</integer>
 
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
@@ -172,9 +184,6 @@
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
@@ -185,8 +194,7 @@
            remote submix module.  This module is used to record and stream system
            audio output to the WiFi display encoder in the media server.
          * The remote submix module "audio.r_submix.default" must be installed on the device.
-         * The device must be provisioned with HDCP keys (for protected content).
-    -->
+         * The device must be provisioned with HDCP keys (for protected content). -->
     <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
@@ -205,14 +213,4 @@
         For example, a device with Home, Back and Menu keys would set this
         config to 7. -->
     <integer name="config_deviceHardwareKeys">7</integer>
-
-    <!-- Defines the system property to set for performance profile xe: sys.cpu.modes. Leave it
-         blank if the device do not support performance profiles -->
-    <string name="config_perf_profile_prop" translatable="false">sys.perf.profile</string>
-
-    <!-- When config_perf_profile_prop is defined, this value MUST be the index of
-         one of the listes values in frameworks/base/core/res/res/values/cm_arrays.xml
-         for "perf_profile_values" array. Leave it blank if the device do not support
-         performance profiles  -->
-    <string name="config_perf_profile_default_entry" translatable="false">1</string>
 </resources>
